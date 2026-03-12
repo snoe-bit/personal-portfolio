@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sinokubonga Bhebe — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Sinokubonga Bhebe, a Computer Science student at NUST Zimbabwe specialising in Java and C# full stack development." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <span class="nav-tag mono">Portfolio&nbsp;2026</span>
+    <a href="#hero" class="nav-logo" aria-label="Sinokubonga Bhebe home">Sinokubonga</a>
+    <a href="#contact" class="nav-cta" id="nav-contact-btn" aria-label="Contact me">Contact</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-pre mono reveal">Computer Science · NUST Zimbabwe</p>
+
+      <h1 class="hero-headline reveal reveal-delay-1">
+        <em class="script">Where&nbsp;</em><span class="bold-word">CODE</span>
+        <br/>
+        <em class="script">Meets&nbsp;</em><span class="bold-word">FULL STACK</span>
+      </h1>
+
+      <p class="hero-sub mono reveal reveal-delay-2">
+        Building robust systems from database to interface,<br/>
+        one commit at a time.
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#projects" class="btn-primary" id="hero-work-btn">View My Work</a>
+        <a href="#about" class="btn-ghost" id="hero-about-btn">About Me</a>
+      </div>
+    </div>
+
+    <!-- Tilted concept cards -->
+    <div class="hero-cards" aria-hidden="true">
+      <div class="concept-card card-1">
+        <span class="card-label mono">BACKEND</span>
+        <div class="card-img-wrap">
+          <div class="card-code-preview">
+            <span class="cp-line"><span class="cp-kw">public</span> <span class="cp-cls">class</span> Main {</span>
+            <span class="cp-line">&nbsp;&nbsp;<span class="cp-fn">public static void</span> main(</span>
+            <span class="cp-line">&nbsp;&nbsp;&nbsp;&nbsp;String[] args) {</span>
+            <span class="cp-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="cp-fn">System.out</span></span>
+            <span class="cp-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.println(<span class="cp-str">"Hello!"</span>);</span>
+            <span class="cp-line">&nbsp;&nbsp;}</span>
+            <span class="cp-line">}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="concept-card card-2">
+        <span class="card-label mono">OOP &amp; DESIGN</span>
+        <div class="card-img-wrap">
+          <div class="card-code-preview">
+            <span class="cp-line"><span class="cp-kw">interface</span> IService {</span>
+            <span class="cp-line">&nbsp;&nbsp;<span class="cp-fn">void</span> Execute();</span>
+            <span class="cp-line">}</span>
+            <span class="cp-line"><span class="cp-kw">class</span> <span class="cp-cls">ApiService</span></span>
+            <span class="cp-line">&nbsp;&nbsp;: IService {</span>
+            <span class="cp-line">&nbsp;&nbsp;// C# impl</span>
+            <span class="cp-line">}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="concept-card card-3 card-center">
+        <span class="card-label mono">FULL STACK</span>
+        <div class="card-img-wrap">
+          <div class="card-terminal">
+            <div class="ct-bar"><span></span><span></span><span></span></div>
+            <p class="ct-text mono">$ git push origin main<br/>→ Deploying v2.4.1...<br/>✓ Build <span class="ct-ok">successful</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="concept-card card-4">
+        <span class="card-label mono">DATA &amp; APIs</span>
+        <div class="card-img-wrap">
+          <div class="card-code-preview">
+            <span class="cp-line"><span class="cp-kw">GET</span> /api/users</span>
+            <span class="cp-line"><span class="cp-str">200 OK</span></span>
+            <span class="cp-line">{</span>
+            <span class="cp-line">&nbsp;&nbsp;<span class="cp-fn">"id"</span>: 1,</span>
+            <span class="cp-line">&nbsp;&nbsp;<span class="cp-fn">"name"</span>:</span>
+            <span class="cp-line">&nbsp;&nbsp;<span class="cp-str">"Sino"</span></span>
+            <span class="cp-line">}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="concept-card card-5">
+        <span class="card-label mono">ALGORITHMS</span>
+        <div class="card-img-wrap">
+          <div class="card-code-preview">
+            <span class="cp-line"><span class="cp-kw">for</span> (int i = 0;</span>
+            <span class="cp-line">&nbsp;&nbsp;i &lt; n; i++) {</span>
+            <span class="cp-line">&nbsp;&nbsp;<span class="cp-fn">swap</span>(arr, i,</span>
+            <span class="cp-line">&nbsp;&nbsp;&nbsp;&nbsp;minIdx);</span>
+            <span class="cp-line">}</span>
+            <span class="cp-line"><span class="cp-str">// O(n²)</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section id="about" aria-label="About me">
+    <div class="section-inner">
+      <div class="about-grid">
+
+        <div class="about-text">
+          <p class="section-eyebrow mono reveal">// about.me</p>
+          <h2 class="section-heading reveal reveal-delay-1">
+            <em class="script">Building&nbsp;</em><span class="bold-word">with purpose.</span>
+          </h2>
+          <p class="about-body reveal reveal-delay-2">
+            I'm <strong>Sinokubonga Bhebe</strong>, a Computer Science student at the
+            <strong>National University of Science and Technology (NUST)</strong>, Zimbabwe.
+            I'm passionate about writing clean, efficient code that solves real-world problems.
+          </p>
+          <p class="about-body reveal reveal-delay-3">
+            My foundation in <strong>Java</strong> and <strong>C#</strong> gives me a strong grasp of
+            object-oriented principles, system design, and backend architecture. I'm actively growing
+            my full-stack capabilities — from RESTful APIs and data persistence to crafting
+            responsive interfaces.
+          </p>
+          <div class="about-meta reveal reveal-delay-4">
+            <div class="meta-item">
+              <span class="meta-label mono">Status</span>
+              <span class="meta-value">🎓 BSc Computer Science — Year in Progress</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label mono">Location</span>
+              <span class="meta-value">📍 Bulawayo, Zimbabwe</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label mono">Open To</span>
+              <span class="meta-value">Internships &amp; Collaborative Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-terminal reveal reveal-delay-2" aria-hidden="true">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <div class="t-dot t-red"></div>
+              <div class="t-dot t-yellow"></div>
+              <div class="t-dot t-green"></div>
+              <span class="mono" style="font-size:0.7rem;color:#666;margin-left:8px;">sinokubonga ~ bash</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <p class="t-line"><span class="t-prompt">~</span> <span id="typed-text"></span><span class="cursor" id="cursor">▮</span></p>
+              <div id="terminal-output"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════ -->
+  <section id="skills" aria-label="Skills and technologies">
+    <div class="section-inner">
+      <p class="section-eyebrow mono reveal">// skill.set</p>
+      <h2 class="section-heading reveal reveal-delay-1">
+        <em class="script">The&nbsp;</em><span class="bold-word">TOOLKIT.</span>
+      </h2>
+      <p class="skills-sub mono reveal reveal-delay-2">Languages, paradigms &amp; tools I work with.</p>
+
+      <div class="skills-grid reveal reveal-delay-3">
+
+        <div class="skill-group">
+          <p class="skill-group-label mono">Languages</p>
+          <div class="skill-pills">
+            <span class="pill pill-highlight">Java</span>
+            <span class="pill pill-highlight">C#</span>
+            <span class="pill">SQL</span>
+            <span class="pill">HTML / CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-label mono">Paradigms &amp; Patterns</p>
+          <div class="skill-pills">
+            <span class="pill">Object-Oriented Programming</span>
+            <span class="pill">Design Patterns</span>
+            <span class="pill">Data Structures</span>
+            <span class="pill">Algorithms</span>
+            <span class="pill">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-label mono">Tools &amp; Platforms</p>
+          <div class="skill-pills">
+            <span class="pill">Git &amp; GitHub</span>
+            <span class="pill">IntelliJ IDEA</span>
+            <span class="pill">Visual Studio</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <p class="skill-group-label mono">Currently Exploring</p>
+          <div class="skill-pills">
+            <span class="pill pill-dim">Spring Boot</span>
+            <span class="pill pill-dim">ASP.NET Core</span>
+            <span class="pill pill-dim">Docker</span>
+            <span class="pill pill-dim">React</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════ -->
+  <section id="projects" aria-label="Featured projects">
+    <div class="section-inner">
+      <p class="section-eyebrow mono reveal">// featured.work</p>
+      <h2 class="section-heading reveal reveal-delay-1">
+        <em class="script">Things&nbsp;I've&nbsp;</em><span class="bold-word">BUILT.</span>
+      </h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card card-tilt-left reveal reveal-delay-1" id="project-library" aria-label="Library Management System project">
+          <div class="project-tag mono">JAVA · OOP</div>
+          <div class="project-img project-img-1" aria-hidden="true">
+            <div class="project-code-bg mono">
+              <span>public class Library {</span>
+              <span>&nbsp;&nbsp;private List&lt;Book&gt; catalog;</span>
+              <span>&nbsp;&nbsp;public void addBook(Book b) {</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;catalog.add(b);</span>
+              <span>&nbsp;&nbsp;}</span>
+              <span>&nbsp;&nbsp;public List&lt;Book&gt; search(</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;String query) {...}</span>
+              <span>}</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Library Management System</h3>
+            <p class="project-desc">A fully object-oriented library management system built in Java. Handles book cataloguing, member management, borrowing workflows, and overdue notifications with a console-based interface.</p>
+            <div class="project-tech">
+              <span class="pill-sm">Java</span>
+              <span class="pill-sm">OOP</span>
+              <span class="pill-sm">Collections API</span>
+              <span class="pill-sm">File I/O</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card card-tilt-right reveal reveal-delay-2" id="project-bank" aria-label="Banking Application project">
+          <div class="project-tag mono">C# · .NET</div>
+          <div class="project-img project-img-2" aria-hidden="true">
+            <div class="project-code-bg mono">
+              <span><span style="color:#6ee7f7">public class</span> Account {</span>
+              <span>&nbsp;&nbsp;public decimal Balance</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;{ get; private set; }</span>
+              <span>&nbsp;&nbsp;public void Deposit(</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;decimal amount) {</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;Balance += amount;</span>
+              <span>&nbsp;&nbsp;}</span>
+              <span>}</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Banking Application</h3>
+            <p class="project-desc">A console-based banking application in C# implementing core banking operations — account creation, deposits, withdrawals, and transaction history. Demonstrates solid use of OOP principles and exception handling.</p>
+            <div class="project-tech">
+              <span class="pill-sm">C#</span>
+              <span class="pill-sm">.NET</span>
+              <span class="pill-sm">OOP</span>
+              <span class="pill-sm">Exception Handling</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card card-tilt-left reveal reveal-delay-3" id="project-sorter" aria-label="Algorithm Visualiser project">
+          <div class="project-tag mono">JAVA · ALGORITHMS</div>
+          <div class="project-img project-img-3" aria-hidden="true">
+            <div class="project-code-bg mono">
+              <span><span style="color:#6ee7f7">static void</span> quickSort(</span>
+              <span>&nbsp;&nbsp;int[] arr, int lo,</span>
+              <span>&nbsp;&nbsp;int hi) {</span>
+              <span>&nbsp;&nbsp;if (lo &lt; hi) {</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;int p = partition(</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr, lo, hi);</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;quickSort(arr,lo,p-1);</span>
+              <span>&nbsp;&nbsp;}</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Sorting Algorithm Visualiser</h3>
+            <p class="project-desc">An interactive educational tool implementing Bubble Sort, Selection Sort, Merge Sort, and Quick Sort. Includes step-by-step trace output and performance comparison — built as part of a Data Structures coursework.</p>
+            <div class="project-tech">
+              <span class="pill-sm">Java</span>
+              <span class="pill-sm">Algorithms</span>
+              <span class="pill-sm">Data Structures</span>
+              <span class="pill-sm">Recursion</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section id="contact" aria-label="Contact">
+    <div class="section-inner contact-inner">
+      <div class="contact-glow" aria-hidden="true"></div>
+
+      <p class="section-eyebrow mono reveal">// contact.init()</p>
+      <h2 class="contact-heading reveal reveal-delay-1">
+        Let's <em class="script">Build&nbsp;</em><br/>
+        <span class="bold-word">SOMETHING.</span>
+      </h2>
+      <p class="contact-sub mono reveal reveal-delay-2">
+        Open to internships, collaborations &amp; interesting problems.
+      </p>
+
+      <div class="contact-links reveal reveal-delay-3">
+        <a href="mailto:sinokubonga.bhebe@students.nust.ac.zw" class="contact-link" id="contact-email" aria-label="Send email to Sinokubonga">
+          <span class="contact-link-icon" aria-hidden="true">✉</span>
+          <span>.email()</span>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-github" aria-label="GitHub profile">
+          <span class="contact-link-icon" aria-hidden="true">⌥</span>
+          <span>.github()</span>
+        </a>
+        <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-linkedin" aria-label="LinkedIn profile">
+          <span class="contact-link-icon" aria-hidden="true">◈</span>
+          <span>.linkedin()</span>
+        </a>
+      </div>
+
+      <div class="contact-footer mono reveal reveal-delay-4">
+        <span>© 2026 Sinokubonga Bhebe</span>
+        <span class="dot-sep" aria-hidden="true">·</span>
+        <span>NUST Zimbabwe</span>
+        <span class="dot-sep" aria-hidden="true">·</span>
+        <span>Designed &amp; Built from scratch</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
